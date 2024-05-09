@@ -42,14 +42,15 @@ body {
   align-items: center;
   gap: 0.625rem;
 }
+
 .logo .logo-icon {
   height: 5.875rem;
   height: 1.938rem;
 }
 .logo-text {
   font-size: 2rem;
-  font-weight: bold;
   color: var(--text-color);
+  font-weight: bold;
 }
 
 .nav {
@@ -233,39 +234,37 @@ body {
     max-width: 100%;
     margin-top: 0.05rem;
   }
-  .button-group{
+  .button-group {
     justify-content: center;
   }
   .image-container {
     height: 50vh;
-   }
+  }
 }
 
 /* --------------------------------------------mini hero section------------------------------------------------------ */
-.company-container{
-  /* width: 50vw; */
+.company-container {
   width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
-  margin: 1rem  auto;
+  margin: 1rem auto 2rem auto;
   text-align: center;
   animation: SlideFromLeft 1.15s ease-in-out forwards;
-  
 }
-.company-text{
-  font-size: 2.3rem;
+.company-text {
+  font-size: 2.25rem;
   font-weight: 700;
   padding: 0.8rem;
 }
 
-.company-grid{
+.company-grid {
   max-width: 95vw;
   margin: 0 auto;
   padding: 1.7rem 2.5rem;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
   gap: 3.4rem;
   border: none;
@@ -273,27 +272,118 @@ body {
 
   background-color: var(--light-gray);
 }
-.company-grid-container{
+.company-grid-container {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   gap: 0.5rem;
 }
-.svg-image{
+.svg-image {
   height: 1.56rem;
   color: var(--gray);
   font-weight: 500;
 }
 
-.logo-text{
+.company-logo-text {
   font-size: 1rem;
   color: var(--gray);
-  font-weight: 500;  
+  font-weight: 500;
 }
 
-@media screen and (max-width:600px) {
-  .company-grid{
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+@media screen and (max-width: 600px) {
+  .company-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
+}
+/* -------------------------------------------------------mid section---------------------------------------------------------------------- */
+.mid-section-container {
   
+  background-color: var(--light-gray);
+  text-align: center;
+  padding: 2.5rem 0;
+}
+.mid-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+}
+.mid-section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.mid-section-header-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+.mid-section-header-discription {
+  max-width: 100%;
+  color: var(--gray);
+  font-size: 1.rem;
+}
+/* --------------------------------------mid section grid--------------------------------------- */
+.mid-section-grid {
+  margin-top: 0.3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.card {
+  padding: 1.6rem;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.mid-section-card-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  pad: 0.5rem;
+  background-color: var(--background-color);
+  border: none;
+  border-radius: 25px;
+}
+.mid-secion-card-logo {
+  height: 1.5rem;
+  padding: 0.5rem;
+}
+.mid-section-card-heading {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+.mid-section-card-desc {
+  color: white;
+  font-size: 1rem;
+}
+.card1 {
+  background-color: #4a90e2;
+}
+.card2 {
+  background-color: #ff6289;
+}
+.card3 {
+  background-color: #fcbf58;
+}
+.card4 {
+  background-color: #44bfc3;
+}
+.card5 {
+  background-color: #77b05d;
+}
+.card6 {
+  background-color: #7d78b1;
 }
