@@ -289,7 +289,7 @@ body {
   font-weight: 500;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 676px) {
   .company-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -297,7 +297,6 @@ body {
 }
 /* -------------------------------------------------------mid section---------------------------------------------------------------------- */
 .mid-section-container {
-  
   background-color: var(--light-gray);
   text-align: center;
   padding: 2.5rem 0;
@@ -323,7 +322,7 @@ body {
 .mid-section-header-discription {
   max-width: 100%;
   color: var(--gray);
-  font-size: 1.rem;
+  font-size: 1rem;
 }
 /* --------------------------------------mid section grid--------------------------------------- */
 .mid-section-grid {
@@ -356,9 +355,15 @@ body {
   border: none;
   border-radius: 25px;
 }
+
 .mid-secion-card-logo {
   height: 1.5rem;
   padding: 0.5rem;
+}
+.mid-section-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 .mid-section-card-heading {
   font-size: 1.3rem;
@@ -386,4 +391,79 @@ body {
 }
 .card6 {
   background-color: #7d78b1;
+}
+
+
+@media screen and (max-width: 676px) {
+  .mid-section-grid {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 50vw;
+  }
+}
+/* ---------------------------------------------------mid section footer------------------------------------------------------ */
+.mid-sectin-footer {
+  margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.mid-section-footer-title {
+  margin-bottom: 2rem;
+}
+.mid-section-footer-title h1 {
+  font-size: 2rem;
+}
+
+.mid-section-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  gap: 1rem;
+}
+.mid-section-footer-card {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  border: 1px solid var(--gray);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease-in 0s;
+}
+.mid-section-footer-card:hover{
+  transform: scale(1.05);
+  border: 1px solid blue;
+}
+.card-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9em;
+}
+.m-s-f-des p {
+  font-size: 0.875rem;
+  color: #555;
+}
+.m-s-f-info-container h2{
+  font-size: 1rem;
+  color: var(--primary-color);
+}
+.m-s-f-info-container span{
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.m-s-f-image-container img {
+  height: 5rem;
+  border: none;
+  border-radius: 50%;
 }
