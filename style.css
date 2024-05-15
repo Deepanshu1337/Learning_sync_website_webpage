@@ -38,7 +38,7 @@ header{
 .header{
   width: 100%;
   max-width: 1280px;
-  margin: 2.5rem 1rem;
+  margin: 2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
