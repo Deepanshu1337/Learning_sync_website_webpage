@@ -27,8 +27,14 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
-
-.header-content {
+.header{
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+ 
+}
+.header-content{
+  width: 100vw;
   max-width: 1280px;
   margin: 0.5rem 1rem;
   display: flex;
@@ -117,6 +123,7 @@ body {
   text-align: center;
 
   flex-direction: row;
+  justify-content: space-between;
   margin: 1.8rem auto;
   padding: 1rem;
   gap: 1rem;
