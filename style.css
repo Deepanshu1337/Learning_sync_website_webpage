@@ -434,6 +434,7 @@ main{
 }
 
 .mid-section-footer-grid {
+  overflow-x: visible;
   width: 95vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
